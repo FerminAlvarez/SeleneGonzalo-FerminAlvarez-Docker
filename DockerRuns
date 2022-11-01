@@ -1,0 +1,5 @@
+Escuchamos el puerto 3000 de docker en el 3004
+docker run -d -p 3004:3000 expressdocker
+docker run -d -p 3005:80 phpdocker
+docker run -d -p 5000:5000 pythondocker
+docker run -d -p 7000:3000 reactdocker

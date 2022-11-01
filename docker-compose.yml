@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  express:
+    build: ./ex
+    ports:
+      - "3004:3000"
+  php:
+    build: ./ph
+    ports:
+      - "3005:80"
+  python:
+    build: ./py/.venv
+    ports:
+      - "5000:5000"
+  react:
+    build: ./randoms
+    ports:
+      - "7000:3000"
