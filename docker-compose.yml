@@ -1,18 +1,28 @@
 version: "3.9"
 services:
   express:
+    image: express
     build: ./ex
     ports:
       - "3004:3000"
   php:
+    image: php
     build: ./ph
     ports:
       - "3005:80"
+  php_2:
+    image: php
+    ports:
+      - "3006:80"
   python:
+    image: python
     build: ./py/.venv
     ports:
       - "5000:5000"
   react:
+    image: react
     build: ./randoms
     ports:
       - "7000:3000"
+    environment:
+      - EXPRESS_PORT=3004
