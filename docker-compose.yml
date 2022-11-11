@@ -23,6 +23,9 @@ services:
     image: react
     build: ./randoms
     ports:
-      - "7000:3000"
+      - "3000:3000"
     environment:
-      - EXPRESS_PORT=3004
+      - REACT_APP_EXPRESS_PORT=3004
+      - REACT_APP_PHP_PORT=3005
+      - REACT_APP_PHP2_PORT=3006
+      - REACT_APP_PYTHON_PORT=5000
